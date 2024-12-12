@@ -2,20 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
+  /* Color variables for future use */
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --color-bg: #fcfaf8; */
+    /* --color-accent: #14cf93; */
+    /* --color-accent: ##64ffda; */
+    /* --color-accent: #61dafb); */
+    /* --color-text: #383838; */
+    /* --color-dark-2: #282828; */
+    /* --color-dark-3: #a2a2a2; */
+
+    /* Light Theme */
+    --color-bg: theme(colors.slate.900);
+    --color-bg-secondary: theme(colors.slate.800);
+    --color-accent: theme(colors.sky.400);
+    --color-accent-light: theme(colors.sky.400/0.1);
+    --color-text: theme(colors.slate.400);
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
+  }
+
+  /* Dark Theme */
+  .dark {
+    --color-bg: theme(colors.slate.900);
+    --color-bg-secondary: theme(colors.slate.800);
+    --color-accent: theme(colors.sky.400);
+    --color-accent-light: theme(colors.sky.400/0.1);
+    --color-text: theme(colors.slate.400);
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
+  }
+
+  @font-face {
+    font-family: 'agustina';
+    src: url('/fonts/Agustina-Signature.otf') format('opentype');
+  }
+
+  * {
+    @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* TYPOGRAPHY */
+
+.heading-secondary {
+  @apply text-3xl sm:text-4xl capitalize font-medium mb-8 sm:mb-12 text-dark-2;
 }

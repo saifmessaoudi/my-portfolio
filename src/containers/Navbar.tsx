@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Button, DarkModeButton, Link, NavButton } from '../components';
+import { Button, Link, NavButton } from '../components';
 import { fadeIn, slideIn } from '../animations';
 import { author, navbarSection } from '../utils/portfolio';
 import { getBreakpointsWidth, getId } from '../utils/helper';

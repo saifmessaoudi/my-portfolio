@@ -1,5 +1,4 @@
 import Button from './Button';
-import DarkModeButton from './DarkModeButton';
 import HeroImage from './HeroImage';
 import Link from './Link';
 import ListItem from './ListItem';
@@ -31,5 +30,4 @@ export {
   ProjectCard,
   SEO,
   Link,
-  DarkModeButton,
 };

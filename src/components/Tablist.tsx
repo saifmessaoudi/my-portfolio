@@ -58,9 +58,7 @@ const Tablist = ({ experiences }: Props) => {
             </Link>
           </h3>
           <p className="text-xs font-mono capitalize">
-            <>
-              {started} - {upto}
-            </>
+            {`${started.toString()} - ${upto.toString()}`}
           </p>
         </div>
 

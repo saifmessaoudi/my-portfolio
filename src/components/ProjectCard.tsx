@@ -22,7 +22,7 @@ const ProjectCard = ({
   }, []);
 
   return domLoaded ? (
-    <motion.div {...rest} className="w-full max-w-[350px]">
+    <motion.div  {...rest} >
       <button
         onClick={(e) => {
           // Don't run this if the clicked target is an anchor element

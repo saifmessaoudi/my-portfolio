@@ -3,7 +3,7 @@ import { createContext, useCallback, useEffect, useState } from 'react';
 const initialState = {
   isDark: false,
   toggleTheme: () => {},
-  setIsDarkMode: (theme: boolean) => {},
+  
 };
 
 const ThemeContext = createContext(initialState);
@@ -50,7 +50,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       value={{
         isDark: isDark === undefined ? false : isDark,
         toggleTheme,
-        setIsDarkMode,
+        
       }}
     >
       {children}

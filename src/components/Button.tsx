@@ -43,10 +43,8 @@ const Button = (props: Props & MotionProps) => {
     className,
     children,
     type = 'button',
-    variant = 'solid',
     size = 'sm',
     center = false,
-    ...rest
   } = props;
 
   const classes = `${

@@ -1,3 +1,5 @@
+// Type definitions for the whole project
+
 export type NavLinkType = {
   name: string;
   url: string;
